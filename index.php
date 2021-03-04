@@ -15,6 +15,7 @@
  *     production
  *
  * NOTE: If you change these, also change the error_reporting() code below
+ * New comment added
  *
  */
 	define('ENVIRONMENT', 'development');
