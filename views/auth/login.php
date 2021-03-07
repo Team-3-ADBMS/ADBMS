@@ -24,10 +24,7 @@
                 <input type="email" class="form-control" name="email" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
-              <div class="form-group">
-                <label for="InputPassword1">Password</label>
-                <input type="password" class="form-control" name="password" id="InputPassword1" placeholder="Password">
-              </div>
+              
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             <?php if(@$login_invalid){?>
