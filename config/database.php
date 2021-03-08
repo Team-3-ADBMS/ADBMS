@@ -80,7 +80,32 @@ $active_record = TRUE;
 // $db['default']['autoinit'] = TRUE;
 // $db['default']['stricton'] = FALSE;
 
-
+$db['default'] = array(
+    'dsn'   => '',
+    // 'hostname' => '192.168.0.109:1521/orcl', //hostname:db_port/service_name
+    'hostname' => 'oracle.cs.uwindsor.ca:1521/cs01',
+    'username' => 'CHANCHA', 
+    'password' => 'FAHMENIAC', 
+    'database' => '',
+    // 'hostname' => 'localhost:1521/XE',
+    // 'username' => 'WIND_BANK', 
+    // 'password' => 'FAHMENIAC', 
+    'database' => '',
+    'dbdriver' => 'oci8',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt' => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
+);
 
 
 /* End of file database.php */
