@@ -18,9 +18,7 @@ class UserController extends CI_Controller
 	public function myprofile()
 	{
 		$customer_id = $this->session->userdata('user')['customer_id'];
-		$query = "SELECT * FROM CREDENTIALS CR 
-				INNER JOIN CUSTOMER_MST CM ON CM.EMAIL = CR.EMAIL
-				WHERE CM.CUSTOMER_ID = '$customer_id'";
+		
 		$query = $this->db->query($query);
 		$data = $query->result_array()[0];
 		// echo json_encode($data);exit;
