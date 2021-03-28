@@ -1,3 +1,5 @@
+
+--time source 
 CREATE TABLE TIME_INFO AS
 SELECT
           DT TDATE,
